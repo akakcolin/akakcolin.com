@@ -1,0 +1,160 @@
+baseurl = "http://www.akakcolin.com"
+title = "小灰Merlin's Blog"
+theme = "hugo-coder"
+languagecode = "zh-cn"
+defaultcontentlanguage = "zh-cn"
+
+enableRobotsTXT = true
+canonifyURLs = true
+
+paginate = 9999
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pluralizelisttitles = false
+
+FootnoteReturnLinkContents = "↑"
+
+[markup.goldmark.renderer]
+    unsafe= true
+
+[outputs]
+  page     = ["HTML", "AMP"]
+  home     = ["HTML", "RSS"]
+  section  = ["HTML"]
+  taxonomyTerm = ["HTML"]
+  taxonomy = ["HTML"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[params]
+    author = "Zenghui Liu"
+    info = ""
+    description = "记录"
+    keywords = "Fortran, "
+    avatarurl = "images/mdw.png"
+    logoImg = "images/bmpi_logo.jpg"
+    header = "akakcolin.com"
+
+    github = "akakcolin"
+    zhihu = "improve365"
+
+    favicon_32 = "images/f/favicon-32x32.png"
+    favicon_16 = "images/f/favicon-16x16.png"
+
+    # footercontent = "self/dev/money"
+
+    hidecredits = true
+    hidecopyright = false
+
+    series = true
+
+    rtl = false
+
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorscheme = "auto"
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    math = true
+    custom_css = ["/css/main.css"]
+    custom_js = ["/js/lazysizes.min.js", "/js/flying-pages.min.js", "/js/custom.js"]
+
+    dateFormat = "2006-01-02"
+
+    # AMP
+    amp = true
+    ampElements = ["amp-ad","amp-analytics"]
+    themeColor = "#000000"
+    adsensePublisher = ""
+    googleAnalytics = ""
+
+# Comments on github issue
+[params.utteranc]
+    repo = ""
+    issue-term = "pathname"
+    theme = "github-light"
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/akakcolin"
+[[params.social]]
+    name = "WeChat"
+    icon = "fab fa-weixin"
+    weight = 5
+    url = "https://img.bmpi.dev/755b406f-43ae-e382-e13c-547116d3e7d5.png"
+[[params.social]]
+    name = "ZhiHu"
+    icon = "fab fa-zhihu"
+    weight = 6
+    url = "https://zhuanlan.zhihu.com/"
+[[params.social]]
+    name = "RSS"
+    icon = "fas fa-rss"
+    weight = 8
+    url = "index.xml"
+
+[languages]
+    [languages.en]
+        languagename = "English"
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 1
+                url = "/about/"
+            [[languages.en.menu.main]]
+                name = "Self"
+                weight = 2
+                url  = "/self/"
+            [[languages.en.menu.main]]
+                name = "Dev"
+                weight = 3
+                url  = "/dev/"
+            [[languages.en.menu.main]]
+                name = "Project"
+                weight = 4
+                url  = "/project/"
+
+    [languages.zh-cn]
+        languagename = "Chinese"
+        title = "小灰Merlin的记录"
+
+        [languages.zh-cn.params]
+            author = "刘增辉"
+            info = "t"
+            description = " "
+            keywords = " "
+
+        [languages.zh-cn.menu]
+
+            [[languages.zh-cn.menu.main]]
+                name = "关于"
+                weight = 1
+                url = "/about/"
+            [[languages.zh-cn.menu.main]]
+                name = "学习"
+                weight = 2
+                url  = "/self/"
+            [[languages.zh-cn.menu.main]]
+                name = "技术"
+                weight = 3
+                url  = "/dev/"
+            [[languages.zh-cn.menu.main]]
+                name = "个人项目"
+                weight = 4
+                url  = "/project/"
